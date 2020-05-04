@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">covidappb1</string>
+    <string name="title_home">Home</string>
+    <string name="title_country">Country</string>
+    <string name="edit_message">Country</string>
+    <string name="button_send">Send</string>
+    <string name="apikey"></string>
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".ui.home.JavaFragment">
+
+
+    <WebView
+        android:id="@+id/webview1"
+        android:layout_width="297dp"
+        android:layout_height="158dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absolute="1dp" />
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="208dp"
+        android:layout_below="@+id/webview1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="251dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".ui.home.HomeFragment">
+
+        <TextView
+            android:layout_width="273dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="COVID-19 \nWorldwide Cases"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="24dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Maaz Malik Z23385841" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLabelTotalConfirmed"
+        style="@style/LabelFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="250dp"
+        android:text="Global Cases"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/tvTotalConfirmed"
+        style="@style/TotalFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="136dp"
+        android:layout_marginRight="136dp"
+        android:layout_marginBottom="203dp"
+        android:textColor="@color/colorTotalConfirmed"
+        tools:text="162387" />
+
+    <TextView
+        android:id="@+id/tvLabelTotalDeaths"
+        style="@style/LabelFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginBottom="125dp"
+        android:text="Total Deaths"
+        android:textColor="@color/colorTotalDeaths" />
+
+    <TextView
+        android:id="@+id/tvTotalDeaths"
+        style="@style/TotalFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="83dp"
+        android:textColor="@color/colorTotalDeaths"
+        tools:text="75648" />
+
+    <TextView
+        android:id="@+id/tvLabelTotalRecovered"
+        style="@style/LabelFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="123dp"
+        android:text="Total Recovered"
+        android:textColor="@color/colorTotalRecovered" />
+
+    <TextView
+        android:id="@+id/tvTotalRecovered"
+        style="@style/TotalFontStyle"
+        android:layout_width="99dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginBottom="88dp"
+        android:textColor="@color/colorTotalRecovered"
+        tools:text="75938" />
+
+    <TextView
+        android:id="@+id/tvLastUpdated"
+        style="@style/LabelFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        tools:text="Last Updated Mon, 23 Mar 2020 1:20:30 PM" />
+
+    <ProgressBar
+        android:id="@+id/progress_circular_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:text="Global Chart" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:text="Maaz Malik Z23385841"
+        android:textSize="16dp"
+        android:textColor="#fff"
+        />
+
+
+</RelativeLayout>
