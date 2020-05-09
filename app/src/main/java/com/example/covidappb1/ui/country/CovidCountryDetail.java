@@ -20,12 +20,8 @@ public class CovidCountryDetail extends AppCompatActivity {
 
         tvDetailCountryName = findViewById(R.id.tvDetailCountryName);
         tvDetailTotalCases = findViewById(R.id.tvDetailTotalCases);
-        tvDetailTodayCases = findViewById(R.id.tvDetailTodayCases);
         tvDetailTotalDeaths = findViewById(R.id.tvDetailTotalDeaths);
-        tvDetailTodayDeaths = findViewById(R.id.tvDetailTodayDeaths);
         tvDetailTotalRecovered = findViewById(R.id.tvDetailTotalRecovered);
-        tvDetailTotalActive = findViewById(R.id.tvDetailTotalActive);
-        tvDetailTotalCritical = findViewById(R.id.tvDetailTotalCritical);
 
         //CALL COVID COUTNRY (PARCELABLE)
         CovidCountry covidCountry = getIntent().getParcelableExtra("Extra Covid");
