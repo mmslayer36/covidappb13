@@ -75,18 +75,6 @@ public class CountryFragment extends Fragment {
         covidCountryAdapter = new CovidCountryAdapter(covidCountries);
         rvCovidCountry.setAdapter(covidCountryAdapter);
 
-        ItemClickSupport.addTo(rvCovidCountry).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
-            @Override
-            public void onItemClicked(RecyclerView recyclerView, int position, View v) {
-                showSelectedCovidCountry(covidCountries.get(position));
-            }
-        });
-    }
-
-    private void showSelectedCovidCountry(CovidCountry covidCountry){
-        Intent covidCovidCountryDetail = new Intent(getActivity(), CovidCountryDetail.class);
-        covidCovidCountryDetail.putExtra("Extra Covid", (Parcelable) covidCountry);
-        startActivity(covidCovidCountryDetail);
     }
 
     private void getDataFromServer() {
