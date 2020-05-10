@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    tools:context=".ui.home.JavaFragment">
+    tools:context=".ui.home.HomeFragment">
 
 
     <WebView
@@ -31,7 +31,11 @@
         android:layout_marginBottom="251dp"
         android:gravity="center"
         android:orientation="vertical"
-        tools:context=".ui.home.HomeFragment">
+        tools:context=".ui.home.HomeFragment"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginRight="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true">
 
         <TextView
             android:layout_width="273dp"
