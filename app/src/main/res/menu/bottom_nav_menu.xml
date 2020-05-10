@@ -10,6 +10,10 @@
         android:id="@+id/navigation_country"
         android:icon="@drawable/country_selector"
         android:title="@string/title_country" />
+    <item
+        android:id="@+id/navigation_chart"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_chart" />
 
 
 </menu>
