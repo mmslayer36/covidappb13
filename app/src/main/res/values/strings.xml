@@ -2,7 +2,8 @@
     <string name="app_name">covidappb1</string>
     <string name="title_home">Home</string>
     <string name="title_country">Country</string>
+    <string name="title_chart">Chart</string>
     <string name="edit_message">Country</string>
     <string name="button_send">Send</string>
-    <string name="apikey"></string>
+    <string name="apikey">a71b9d9cb727b8a51f80f10f6ffff332</string>
 </resources>
